@@ -1,17 +1,27 @@
 import React,{Component} from 'react';
-import Contact from './components/Contact';
+import Contacts from './components/Contacts';
 import Header from './components/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
+//to import bootstrap,the file is present inside node_modules folder
 class App extends Component{
   render(){
     return (
       
+      
       <div className="App">
-        <Header branding="Contact Manager"/>
+         
+        <Header branding='Contact Manager' />
+        <div className="container">
+        <Contacts/>
+        </div>
         
-        <Contact name="srikanth" number="1232433" mail="nalum@gmail.com"/>
+        
+        
+        
       </div>
     );
   }
 }
+
 
 export default App;
